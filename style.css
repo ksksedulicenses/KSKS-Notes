@@ -1,0 +1,192 @@
+/* KSKS-Notes Style - Schwarzenegger Libertarian Vibe */
+
+/* --- Allgemein --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #121212; /* dunkles, starkes Fundament */
+  color: #e0e0e0; /* heller Text für Kontrast */
+  font-size: 16px;
+  height: 100vh;
+}
+
+/* --- Header --- */
+header {
+  background-color: #0b1d3a; /* kraftvolles Navy-Blau */
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header button {
+  background-color: #1f78ff; /* lebendiges, modernes Blau */
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+header button:hover {
+  background-color: #1a5fcc;
+}
+
+/* --- Container --- */
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  width: 220px;
+  background-color: #1a1a1a;
+  border-right: 1px solid #2e3b4e;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 12px 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar ul li:hover {
+  background-color: #1f78ff;
+  color: #ffffff;
+}
+
+/* --- Main Content --- */
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.main h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #1f78ff; /* markanter Blauton für Überschriften */
+}
+
+.main input[type="text"], .main input[type="file"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #2e3b4e;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.main button {
+  background-color: #1f78ff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 5px;
+}
+
+.main button:hover {
+  background-color: #145bb5;
+}
+
+/* --- Notizbereich --- */
+#noteArea {
+  background-color: #1a1a1a;
+  min-height: 200px;
+  border-radius: 8px;
+  border: 1px solid #2e3b4e;
+  padding: 15px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+/* --- Chat --- */
+#chatArea {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #2e3b4e;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+/* --- Listen: Lizenz / Material / Ordner / User --- */
+#licenseList p,
+#materialList p,
+#folders p,
+#userList p {
+  padding: 10px;
+  background-color: #2e3b4e; /* dunkler Blauton */
+  margin-bottom: 5px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+/* --- Admin Bereich --- */
+#admin button {
+  background-color: #ff4c4c;
+}
+
+#admin button:hover {
+  background-color: #cc3b3b;
+}
+
+/* --- Responsive für iPad --- */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar ul li {
+    margin-right: 10px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+}
