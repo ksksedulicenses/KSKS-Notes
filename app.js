@@ -4,8 +4,8 @@
 ---------------------------- */
 
 /* --- Supabase Setup --- */
-const supabaseUrl = "DEINE_SUPABASE_URL";
-const supabaseKey = "DEIN_SUPABASE_ANON_KEY";
+const supabaseUrl = https://zhafmflcciknfqwczpyk.supabase.co;
+const supabaseKey = sb_publishable_B7oRo3CLIPmWesV76llpIQ_xL1UgbVN;
 const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 /* --- Auth Check --- */
